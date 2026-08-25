@@ -121,6 +121,10 @@ export function readToken9(raw: string, start: number, line: number, column: num
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -202,6 +206,10 @@ export function readToken18(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -283,6 +291,10 @@ export function readToken27(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -364,6 +376,10 @@ export function readToken36(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -445,6 +461,10 @@ export function readToken45(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -526,6 +546,10 @@ export function readToken54(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -607,6 +631,10 @@ export function readToken63(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -688,6 +716,10 @@ export function readToken72(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -769,6 +801,10 @@ export function readToken81(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -850,6 +886,10 @@ export function readToken90(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -931,6 +971,10 @@ export function readToken99(raw: string, start: number, line: number, column: nu
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -1012,6 +1056,10 @@ export function readToken108(raw: string, start: number, line: number, column: n
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
@@ -1093,6 +1141,10 @@ export function readToken117(raw: string, start: number, line: number, column: n
   if (raw.startsWith("//") || raw.startsWith("#")) kind = "comment";
   else if (raw === "{" || raw === "(" || raw === "[") kind = "open";
   else if (raw === "}" || raw === ")" || raw === "]") kind = "close";
+
+  if (raw.length > 240) {
+    return { kind: "comment", value: raw.slice(0, 240), start, end: start + 240, line, column };
+  }
   return { kind, value: raw, start, end, line, column };
 }
 
